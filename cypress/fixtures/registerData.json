@@ -1,0 +1,13 @@
+{
+    "firstName" : "Sara",
+    "lastName" :"Issa",
+    "address" : "123 test street",
+    "city":"test city",
+    "state":"test state",
+    "zipCode":"1234",
+    "phone":"0599999999",
+    "ssn":"12345",
+    "username":"Sarahamdan_test",
+    "password":"test@1234",
+    "confirmPassword":"test@1234"
+}
