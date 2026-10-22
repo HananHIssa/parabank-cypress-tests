@@ -7,7 +7,7 @@ cy.get('[name="password"]').type(password);
 cy.get(':nth-child(5) > .button').click();
 cy.get('.smallText > b').should('be.visible').and('contain.text','Welcome')
 }
-)
+);
 //open new checking account
 Cypress.Commands.add('openCheckingAccount',()=>
 {
