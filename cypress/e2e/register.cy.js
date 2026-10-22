@@ -6,7 +6,7 @@ describe("Registration test",()=>
    cy.visit('https://parabank.parasoft.com/parabank/index.htm');
    cy.get('p').find('a').contains('Register').click();
   });
-  it.only("Register with valid data",()=>
+  it("Register with valid data",()=>
   {
     cy.fixture('registerData').then((data)=>
     {
@@ -19,7 +19,7 @@ describe("Registration test",()=>
       cy.get('[name="customer.address.zipCode"]').type(data.zipCode);
       cy.get('[name="customer.phoneNumber"]').type(data.phone);
       cy.get('[name="customer.ssn"]').type(data.ssn);
-      cy.get('[name="customer.username"]').type(data.username);
+      cy.get('[name="customer.username"]').type(username2);
       cy.get('[name="customer.password"]').type(data.password);
       cy.get('[name="repeatedPassword"]').type(data.password);
       cy.get('[colspan="2"] > .button').click();

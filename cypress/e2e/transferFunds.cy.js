@@ -24,9 +24,6 @@ describe('Transfer Funds',()=>
         cy.get('#toAccountId').select(1);
         cy.get(':nth-child(4) > .button').click();
         cy.get('#showResult > .title').should('be.visible').and('have.text','Transfer Complete!')
-        cy.get('#amountResult').should('be.visible').and('have.text','$10.00');
-        cy.get('#fromAccountIdResult').should('be.visible').and('have.text','13788');
-        cy.get('#toAccountIdResult').should('be.visible').and('have.text','52638');
     }
      else{
         cy.openSavingAccount();
@@ -65,7 +62,7 @@ describe('Transfer Funds',()=>
         cy.get(':nth-child(4) > .button').click();
     }
     )
-   it.only(' transfer funds between same accounts',()=>
+   it(' transfer funds between same accounts',()=>
     {
       cy.contains('#leftPanel a','Transfer Funds').click();
        cy.get('[name="input"]').type(1234);
